@@ -42,13 +42,14 @@ function TeacherForm() {
             subject,
             cost: Number(cost),
             schedule: scheduleItems
-        }).then(() => {
-            alert('Cadastro realizado com sucesso!');
-
-            history.push('/');
-        }).catch(() => {
-            alert('Erro no cadastro!');
-        });
+        })
+            .then(() => {
+                alert('Cadastro realizado com sucesso!');
+                history.push('/');
+            })
+            .catch(() => {
+                alert('Erro no cadastro!');
+            });
     }
 
     function setScheduleItemValue(position: number, field: string, value: string) {

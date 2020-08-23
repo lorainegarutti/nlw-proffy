@@ -9,3 +9,7 @@ Possui configuração do banco de dados (SQLite3).
 ## Web
 
 Possui configuração da parte web responsiva da aplicação para cadastro de aulas e para busca de aulas.
+
+# Testes E2E com Cypress
+
+Disponível em web/cypress/integration/happy-path.spec.js.

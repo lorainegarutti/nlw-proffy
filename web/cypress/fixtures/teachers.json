@@ -1,0 +1,18 @@
+{
+        "teacher1": {
+                "name": "Loraine Garutti",
+                "avatar": "https://avatars3.githubusercontent.com/u/60954622?s=460&u=9a84ce4661b8c23d675c6567262b6de026dd728c&v=4",
+                "whatsapp": "17981017030",
+                "bio": "Economista apaixonada por explicar as relações entre fatos históricos e fatos econômicos.",
+                "subject": "História do Brasil",
+                "cost": "120",
+                "firstDay": "Segunda-feira",
+                "firstDayValue": "1",
+                "startFirstDay": "12:00",
+                "finishFirstDay": "18:00",
+                "secondDay": "Terça-feira",
+                "secondDayValue": "2",
+                "startSecondDay": "08:00",
+                "finishSecondDay": "12:00"
+        }
+}
