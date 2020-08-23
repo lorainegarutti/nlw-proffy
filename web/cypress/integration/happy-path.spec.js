@@ -110,8 +110,8 @@ describe('fazendo cadastro de um professor e a busca no sistema por esse profess
                     .should('have.value', teacher1.secondDayValue);
 
                 cy.get('#time')
-                    .type('15:00')
-                    .should('have.value', '15:00');
+                    .type('10:00')
+                    .should('have.value', '10:00');
 
                 cy.contains('buscar')
                     .click({ force: true });
