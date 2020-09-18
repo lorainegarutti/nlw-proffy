@@ -14,17 +14,17 @@ describe('fazendo cadastro de um professor e a busca no sistema por esse profess
                 cy.fixture('teachers.json').as('teachers');
             });
 
-            it('entrando na home', () => {
+            it('deve entrar na homepage', () => {
                 cy.visit('http://localhost:3000');
                 cy.contains('sua plataforma de estudos online')
             });
 
-            it('entrando na aba "Dar aulas"', () => {
+            it('deve entrar na aba "Dar aulas"', () => {
                 cy.contains('dar aulas')
                     .click({ force: true });
             });
 
-            it('cadastrando a professora "Loraine" para dar aulas de "História do Brasil"', function () {
+            it('deve cadastrar a professora "Loraine" para dar aulas de "História do Brasil"', function () {
                 const teacher1 = this.teachers.teacher1;
 
                 cy.contains('que incrível que você quer dar aulas!')
@@ -92,12 +92,12 @@ describe('fazendo cadastro de um professor e a busca no sistema por esse profess
                     .click({ force: true });
             });
 
-            it('entrando na aba "Estudar"', () => {
+            it('deve entrar na aba "Estudar"', () => {
                 cy.contains('estudar')
                     .click({ force: true });
             });
 
-            it('fazendo busca de aulas de "História do Brasil" ministradas pela professora "Loraine"', function () {
+            it('deve fazer busca de aulas de "História do Brasil" ministradas pela professora "Loraine"', function () {
                 const teacher1 = this.teachers.teacher1;
 
                 cy.contains('estes são os proffys disponíveis');                    
@@ -119,12 +119,12 @@ describe('fazendo cadastro de um professor e a busca no sistema por esse profess
                 cy.contains(teacher1.name)
             });
 
-            it('entrando em contato com "Loraine" para agendar uma aula', () => {
+            it('deve entrar em contato com "Loraine" para agendar uma aula', () => {
                 cy.contains('entrar em contato')
                     .click({ force: true });
             });
 
-            it('acompanhando conexão que foi criada', () => {
+            it('deve acompanhar conexão que foi criada', () => {
                 cy.request('http://localhost:3333/connections')
                     .as('connections')
 
